@@ -1,0 +1,22 @@
+{
+  "name": "grupo-malwee-theme",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel watch assets/js/index.js --public-url ./ --out-dir assets/dist",
+    "build": "parcel assets/js/index.js --public-url ./  --out-dir assets/dist"
+  },
+  "resolutions": {
+    "graceful-fs": "^4.2.4"
+  },
+  "devDependencies": {
+    "eslint": "^7.17.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "parcel-bundler": "^1.12.4",
+    "prettier": "^2.2.1",
+    "sass": "^1.32.2"
+  }
+}

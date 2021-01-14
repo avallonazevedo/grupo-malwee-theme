@@ -1,0 +1,85 @@
+.button {
+  display: inline-flex;
+  font-size: 0.65em;
+  padding: 0.65em 1.25em;
+  transition: 0.2s;
+  &.blue {
+    &.outlined {
+      border: 2px solid $blue;
+      color: $blue;
+      &:hover {
+        background-color: $blue;
+        color: #fff;
+      }
+    }
+  }
+
+  &.purple {
+    &.outlined {
+      border: 2px solid $people-color;
+      color: $people-color;
+      &:hover {
+        background-color: $people-color;
+        color: #fff;
+      }
+    }
+  }
+
+  &.green {
+    &.outlined {
+      border: 2px solid $planet-color;
+      color: $planet-color;
+      &:hover {
+        background-color: $planet-color;
+        color: #fff;
+      }
+    }
+  }
+
+  &.black {
+    &.outlined {
+      border: 2px solid $grey-boulder;
+      color: $grey-boulder;
+      &:hover {
+        background-color: $grey-boulder;
+        color: #fff;
+      }
+    }
+  }
+
+  &.white {
+    &.outlined {
+      border: 2px solid #fff;
+      color: #fff;
+      &:hover {
+        background-color: #fff;
+        color: #fff;
+      }
+    }
+  }
+}
+
+// Texts
+
+.text {
+  &.text-people {
+    color: $people-color;
+  }
+  &.text-planet {
+    color: $planet-color;
+  }
+  &.text-business {
+    color: $business-color;
+  }
+}
+
+// Images
+
+.wrapper-image {
+  position: relative;
+  > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}

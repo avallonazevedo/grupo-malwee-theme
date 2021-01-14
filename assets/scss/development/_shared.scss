@@ -1,0 +1,292 @@
+html, body, main {
+  min-height: 100vh;
+  overflow: auto;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.2;
+  font-size: calc(16px + (23 - 16) * (100vw - 640px) / (1439 - 640));
+}
+
+
+body {
+  font-family: $default-font;
+}
+
+// Container
+
+.container {
+  width: 97.5%;
+  margin: 0 auto;
+  &.medium {
+    width: 92.5%;
+  }
+}
+
+// Header
+#sub-header {
+  padding: 0.4em 0;
+  background-color: $grey;
+  position: relative;
+  z-index: 9;
+  .container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+.social-head {
+  display: flex;
+  align-items: center;
+  li {
+    img {
+      height: 0.65em
+    }
+    &:not(:last-child) {
+      margin-right: 0.6em;
+    }
+  }
+}
+
+.support-menu {
+  ul {
+    display: flex;
+    align-items: center;
+    margin-block: 0;
+    li {
+      display: flex;
+      margin-left: 1.25em;
+    }
+    a {
+      font-size: 0.5em;
+      line-height: 1;
+      color: $medium-grey;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+header {
+  padding: 1.25em 0;
+  box-shadow: 1px 1px 10px rgba(#000, 0.2);
+  position: relative;
+  z-index: 1;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+#logo {
+  width: 6em;
+}
+
+// Menus
+
+#desktop-menu {
+  ul {
+    display: flex;
+    align-items: center;
+    li {
+      &:not(:last-of-type) {
+        margin-right: 1em;
+      }
+    }
+    a {
+      font-size: 0.635em;
+      color: $grey-boulder;
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 1px;
+        background-color: $grey-boulder;
+        left: 0;
+        bottom: -0.5em;
+        transition: 0.2s ease-in-out;
+      }
+
+      &:hover {
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1279px) {
+  #desktop-menu {
+    display: none;
+  }
+}
+
+// Footer
+
+footer {
+  padding: 3em;
+  background-color: $grey;
+  display: grid;
+  grid-gap: 3em;
+  margin-top: 2em;
+  h4, a, address {
+    color: $grey-boulder
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    li {
+      font-size: 0.85em;
+      &:not(:last-child) {
+        margin-bottom: 0.75em;
+      }
+    }
+  }
+  a {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  h4 {
+    margin: 0 0 1em;
+    text-decoration: underline;
+  }
+  nav {
+    &:not(:last-of-type) {
+      margin-bottom: 2em;
+    }
+  }
+
+  address {
+    font-style: normal;
+    font-size: 0.85em;
+    line-height: 1.75;
+    display: block;
+    max-width: 15em;
+    ul {
+      margin-top: 1.5em;
+      li {
+        display: flex;
+        font-size: 1em;
+        img {
+          margin-right: 0.5em;
+        }
+      }
+    }
+  }
+}
+
+#logo-footer {
+  width: 7.5em;
+  margin-bottom: 1em;
+}
+
+.brands {
+  width: 100%;
+}
+
+.social-list {
+  display: flex;
+  margin-bottom: 1em !important;
+  li {
+    &:not(:last-child) {
+      margin-right: 0.75em;
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  footer {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 4em;
+    > div {
+      &:last-child {
+        position: relative;
+        &::before {
+          content: '';
+          position: absolute;
+          width: 1px;
+          height: 100%;
+          left: -3em;
+          top: 0;
+          background-color: #fff;
+        }
+      }
+    }
+    h4 {
+      font-size: 0.65em;
+    }
+    nav {
+      &:not(:last-of-type) {
+        margin-bottom: 1em;
+      }
+    }
+    ul {
+      li {
+        &:not(:last-child) {
+          margin-bottom: 0.15em;
+        }
+      }
+    }
+    a {
+      font-size: 0.65em;
+    }
+
+    address {
+      font-size: 0.6em;
+      max-width: 15em;
+      ul {
+        li {
+          font-size: 0.9em;
+        }
+      }
+    }
+  }
+}
+
+#copyright {
+  display: flex;
+  padding: 1.5em 1em;
+  justify-content: center;
+  font-size: 0.4em;
+  color: $grey-boulder;
+  span {
+    display: inline-flex;
+    margin-right: 2em;
+  }
+  a {
+    color: $grey-boulder;
+    display: inline-flex;
+    margin-left: 1.75em;
+    font-weight: bold;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  #copyright {
+    text-align: center;
+    display: block;
+    padding: 3em;
+    span {
+      display: block;
+      font-size: 1.5em;
+      margin-bottom: 1em;
+      margin-right: 0;
+    }
+    a {
+      font-size: 1.5em;
+      display: inline-block;
+    }
+  }
+}
