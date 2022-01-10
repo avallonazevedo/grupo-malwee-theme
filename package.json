@@ -1,0 +1,28 @@
+{
+  "name": "grupo-malwee-theme",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel watch assets/js/index.js --public-url ./ --out-dir assets/dist",
+    "build": "parcel assets/js/index.js --public-url ./  --out-dir assets/dist"
+  },
+  "resolutions": {
+    "graceful-fs": "^4.2.4"
+  },
+  "devDependencies": {
+    "eslint": "^7.17.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "parcel-bundler": "^1.12.4",
+    "prettier": "^2.2.1",
+    "sass": "^1.32.2"
+  },
+  "dependencies": {
+    "@srexi/purecounterjs": "^1.1.1",
+    "aos": "^3.0.0-beta.6",
+    "embla-carousel": "^4.1.3",
+    "universal-parallax": "^1.3.2"
+  }
+}

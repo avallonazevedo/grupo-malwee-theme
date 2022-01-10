@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="273" height="303" viewBox="0 0 273 303">
+  <g id="Grupo_94" data-name="Grupo 94" transform="translate(-782 -1990)">
+    <g id="Grupo_88" data-name="Grupo 88" transform="translate(809.38 1990)">
+      <circle id="Elipse_3" data-name="Elipse 3" cx="109.5" cy="109.5" r="109.5" transform="translate(-0.379)" fill="#fff"/>
+      <g id="Componente_3_8" data-name="Componente 3 – 8" transform="translate(21.333 21.904)">
+        <path id="Caminho_5" data-name="Caminho 5" d="M561.142,86.976a87.283,87.283,0,1,0-87.282,86.979,87.129,87.129,0,0,0,87.282-86.979" transform="translate(-386.577)" fill="#00b5e2"/>
+        <path id="Caminho_6" data-name="Caminho 6" d="M480.343,22.5,433.6,69.081h65.975c0-.219.016-.436.016-.655A64.29,64.29,0,0,0,480.343,22.5" transform="translate(-347.472 18.567)" fill="#99e1f4"/>
+        <path id="Caminho_7" data-name="Caminho 7" d="M463.668,12.263A64.722,64.722,0,0,0,398.834,76.87c0,.221.015.438.016.657h63.66l46.744-46.584a64.731,64.731,0,0,0-45.586-18.68" transform="translate(-376.383 10.121)" fill="#4dcbeb"/>
+        <path id="Caminho_8" data-name="Caminho 8" d="M398.844,48.018a64.821,64.821,0,0,0,129.631,0Z" transform="translate(-376.375 39.629)" fill="#fff"/>
+      </g>
+    </g>
+    <text id="negócios" transform="translate(782 2278)" fill="#23b5e1" font-size="60" font-family="Montserrat-Regular, Montserrat"><tspan x="0" y="0">negócios</tspan></text>
+  </g>
+</svg>

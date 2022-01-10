@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="218" height="280" viewBox="0 0 218 280">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="218" height="280" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Repetição_de_grade_54" data-name="Repetição de grade 54" clip-path="url(#clip-path)">
+    <g id="Grupo_96" data-name="Grupo 96" transform="translate(-1383 -1990)">
+      <g id="Grupo_89" data-name="Grupo 89" transform="translate(1383 1990)">
+        <circle id="Elipse_3" data-name="Elipse 3" cx="105.5" cy="105.5" r="105.5" transform="translate(0)" fill="#fff"/>
+        <g id="Componente_4_8" data-name="Componente 4 – 8" transform="translate(21.778 21.094)">
+          <path id="Caminho_1" data-name="Caminho 1" d="M672.223,83.76a83.764,83.764,0,1,0-83.765,83.763A83.763,83.763,0,0,0,672.223,83.76" transform="translate(-504.695)" fill="#83b341"/>
+          <path id="Caminho_2" data-name="Caminho 2" d="M516.954,48.01a62.218,62.218,0,0,0,124.43,0Z" transform="translate(-495.405 36.383)" fill="#fff"/>
+          <path id="Caminho_3" data-name="Caminho 3" d="M553.2,70.5A52.174,52.174,0,0,0,605.37,18.322,52.172,52.172,0,0,0,553.2,70.5" transform="translate(-467.94 13.885)" fill="#060"/>
+          <path id="Caminho_4" data-name="Caminho 4" d="M575.246,70.91A53.117,53.117,0,0,0,522.13,17.791,53.117,53.117,0,0,0,575.246,70.91" transform="translate(-491.483 13.482)" fill="#060"/>
+        </g>
+      </g>
+      <text id="planeta" transform="translate(1383 2256)" fill="#83b341" font-size="57" font-family="Montserrat-Regular, Montserrat"><tspan x="0" y="0">planeta</tspan></text>
+    </g>
+  </g>
+</svg>
