@@ -293,8 +293,8 @@
     </div>
     <!-- /.esg-plan-2030 -->
 
-    <section class="instituto-malwee-home">
-        <div class="parallax" data-parallax-image="<?php echo THEME_IMAGES . '/parallax/instituto-malwee-home.jpg' ?>"></div>
+    <section class="transform-your-business">
+        <div class="parallax" data-parallax-image="<?php echo THEME_IMAGES . '/parallax/transform-your-business.jpg' ?>"></div>
         <div class="container medium">
             <div class="content">
                 <strong>Transforme seu negócio</strong>
