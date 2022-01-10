@@ -1,10 +1,10 @@
 <footer data-aos="fade-up">
-    <div class="footer-column">
+    <div class="footer-column brands-column">
         <div id="logo-footer">
-            <img src="<?php echo THEME_IMAGES . '/logo-malwee.svg' ?>" alt="Logo Grupo Malwee">
+            <img src="<?php echo THEME_IMAGES . '/brands/malwee-white.svg' ?>" alt="Logo Grupo Malwee">
         </div>
         <!-- /#logo-footer -->
-        <img class="brands" src="<?php echo THEME_IMAGES . '/brands.png' ?>" alt="Malwee Marcas">
+        <img class="brands" src="<?php echo THEME_IMAGES . '/brands/brand-list-white.svg' ?>" alt="Malwee Marcas">
     </div>
     <!-- /.footer-column -->
 
@@ -65,7 +65,6 @@
 	        $social = array(
 		        'facebook' => 'https://facebook.com',
 		        'instagram' => 'https://instagram.com',
-		        'twitter' => 'https://twitter.com',
 		        'youtube' => 'https://youtube.com',
 		        'linkedin' => 'https://linkedin.com'
 	        );
@@ -87,8 +86,8 @@
             89260-900 - Jaraguá do Sul
             Santa Catarina
             <ul>
-                <li><img src="<?php echo THEME_IMAGES . '/icons/phone.svg' ?>" alt="Icon Phone"> (47) 2107-7200</li>
-                <li><img src="<?php echo THEME_IMAGES . '/icons/envelope.svg' ?>" alt="Icon Envelope">contato@grupomalwee.com.br</li>
+                <li><img src="<?php echo THEME_IMAGES . '/icons/phone-white.svg' ?>" alt="Ícone Telefone"> (47) 2107-7200</li>
+                <li><img src="<?php echo THEME_IMAGES . '/icons/envelope-white.svg' ?>" alt="Ícone Envelope">contato@grupomalwee.com.br</li>
             </ul>
         </address>
     </div>
