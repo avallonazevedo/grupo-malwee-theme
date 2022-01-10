@@ -339,10 +339,10 @@
 
 <section id="blog-home">
     <div class="container">
-        <h2 data-aos="fade-up">Notícias e novidades</h2>
+        <h2 class="text blue" data-aos="fade-up">Notícias</h2>
     </div>
     <!-- /.container -->
-    <ul class="blog-home-post-list">
+    <ul style="display: none;" class="blog-home-post-list">
         <li class="post post-category-business">
             <div class="post-content">
                 <a data-aos="fade-up" class="category" href="#0">Malwee</a>

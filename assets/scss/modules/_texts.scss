@@ -1,0 +1,14 @@
+.text {
+  &.text-people {
+    color: $people-color;
+  }
+  &.text-planet {
+    color: $planet-color;
+  }
+  &.text-business {
+    color: $business-color;
+  }
+  &.blue {
+    color: $business-color;
+  }
+}

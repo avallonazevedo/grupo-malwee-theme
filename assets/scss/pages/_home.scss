@@ -548,10 +548,10 @@
 #blog-home {
   h2 {
     margin: 0.75em 0;
-    color: $grey-boulder;
-    font-weight: 600;
-    font-size: 1.85em;
+    font-size: 1.65em;
     padding: 0 0.75em;
+    font-weight: 900;
+    font-family: $syne-font;
   }
 }
 
@@ -656,7 +656,6 @@
 }
 
 .more-posts-content {
-  padding: 1em 0.5em !important;
   display: grid;
   grid-template-columns: 1em repeat(4, 15em) 1em;
   grid-gap: 1em;
