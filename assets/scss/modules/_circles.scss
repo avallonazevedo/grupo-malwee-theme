@@ -7,10 +7,22 @@
   &.purple {
     border-color: $people-color;
   }
+}
 
-  &.right {
-    right: 0;
-    top: 50%;
-    transform: translate(50%, -50%);
+@media only screen and (max-width: 991px) {
+  .circle {
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .circle {
+    &.right {
+      right: 0;
+      top: 50%;
+      transform: translate(50%, -50%);
+    }
   }
 }

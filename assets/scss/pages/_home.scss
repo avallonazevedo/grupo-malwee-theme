@@ -5,70 +5,168 @@
 }
 
 .main-carousel-slide {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 6em 0 6em 3em;
-  border-left: 1em solid;
-  overflow: hidden;
-  flex-wrap: wrap;
   position: relative;
-  &.main-carousel-slide-blue {
-    border-left-color: $blue;
-    p {
-      strong {
-        color: $blue;
+  display: grid;
+  place-items: center;
+  min-height: calc(100vh - 148px);
+  padding: 3em 0;
+
+  &.cover-image {
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(#000, 0.5);
+      z-index: 1;
+    }
+    > img {
+      position: absolute;
+    }
+  }
+
+  &.main-carousel-slide-video {
+    .carousel-content {
+      color: #fff;
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      max-width: 480px;
+      padding: 0 1em;
+      h3 {
+        font-size: 2.5em;
+        font-weight: 900;
+      }
+    }
+
+    .modal-open {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img {
+        width: 3em;
+        margin: 1em 0;
+      }
+      span {
+        color: #fff;
+        font-size: 0.8em;
+        letter-spacing: 3px;
+        text-transform: uppercase;
       }
     }
   }
 
-  .carousel-content {
-    width: 17.5em;
-    p {
-      font-size: 1.35em;
-      margin: 0.65em 0;
-      color: $grey-boulder
+  &.main-carousel-slide-default {
+    background-color: $light-grey;
+
+    .carousel-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
-    a {
-      margin-top: 1em;
-      font-size: 1em;
+
+    .carousel-text {
+      p {
+        font-size: 2em;
+      }
+
+      > span {
+        font-size: 1em;
+        display: block;
+        margin: 1.5em 0 0.85em;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+      }
+
+      a {
+        font-size: 0.95em;
+      }
     }
+
+    .carousel-image {
+      width: 24em;
+      height: 24em;
+      &.circle-image {
+        border-radius: 100%;
+      }
+    }
+
   }
 
-  .clip-image {
-    margin-top: 2em;
+  &.has-circle {
+    overflow: hidden;
+    .circle {
+      z-index: 2;
+    }
   }
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (max-width: 991px) {
   .main-carousel-slide {
-    padding: 10em 0 10em 3em;
-    .carousel-content {
-      width: 15em;
-      p {
-        font-size: 1em;
+    &.main-carousel-slide-default {
+      .carousel-content {
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
       }
-      a {
-        font-size: 0.7em;
+
+      .carousel-image {
+        margin-top: 3em;
       }
     }
-    .clip-image {
-      margin-top: 0;
-      overflow: hidden;
-      border-top-left-radius: 25em;
-      border-bottom-left-radius: 25em;
-      position: absolute;
-      width: 30em;
-      height: 100%;
-      transform: scale(1.45);
-      right: 0;
-      img {
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-        top: 10%;
-        right: 10%;
-        position: absolute;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .main-carousel-slide {
+    &.main-carousel-slide-video {
+      .carousel-content {
+        h3 {
+          font-size: 1.55em;
+        }
+      }
+
+      .modal-open {
+        img {
+          width: 2em;
+        }
+        span {
+          font-size: 0.5em;
+        }
+      }
+    }
+
+    &.main-carousel-slide-default {
+      .carousel-content {
+        justify-content: space-between;
+      }
+      .carousel-text {
+        width: calc(100% - 24em);
+        padding-right: 4em;
+        p {
+          font-size: 1.85em;
+          max-width: 16em;
+        }
+
+        span {
+          font-size: 0.9em;
+        }
+
+        a {
+          font-size: 0.7em;
+        }
+      }
+
+      &.has-circle {
+        .circle {
+          width: 24em;
+          height: 24em;
+        }
+        padding-right: 7.5em;
       }
     }
   }
@@ -78,7 +176,7 @@
   position: absolute;
   left: 4em;
   bottom: 2em;
-  z-index: 2;
+  z-index: 5;
   display: flex;
   align-items: center;
   color: $grey-boulder;

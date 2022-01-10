@@ -19,47 +19,43 @@
     <!-- /#main-slider-controls -->
     <div class="embla" id="embla-carousel">
         <ul class="main-carousel embla__container">
-            <li class="main-carousel-slide main-carousel-slide-blue embla__slide">
-                <div class="carousel-content" data-aos="fade-right">
-                    <p>Parcerias positivas são aquelas  que duram muito tempo.</p>
-                    <p><strong>Gerar impacto positivo, além do financeiro. </strong></p>
-                    <p>O mundo foi feito para durar.</p>
-                    <a href="#0" class="button blue outlined">Conheça a nova marca</a>
+            <li class="main-carousel-slide main-carousel-slide-video embla__slide cover-image">
+                <img src="<?php echo THEME_IMAGES . '/templates/video.jpg' ?>" alt="Vídeo Placeholder">
+                <div class="carousel-content cover-image">
+                   <h3>O mundo foi feito para durar.</h3>
+                    <a class="modal-open" href="#0">
+                        <img src="<?php echo THEME_IMAGES . '/icons/play-white.svg' ?>" alt="Ícone Play">
+                        <span>Assista nosso manifesto</span>
+                    </a>
                 </div>
                 <!-- /.carousel-content -->
-
-                <div class="clip-image">
-                    <img data-aos="fade-right" src="<?php echo THEME_IMAGES . '/temp-image.jpg' ?>" alt="">
-                </div>
-                <!-- /.clip-image -->
             </li>
-            <li class="main-carousel-slide main-carousel-slide-blue embla__slide">
-                <div class="carousel-content" data-aos="fade-right">
-                    <p>Parcerias positivas são aquelas  que duram muito tempo.</p>
-                    <p><strong>Gerar impacto positivo, além do financeiro. </strong></p>
-                    <p>O mundo foi feito para durar.</p>
-                    <a href="#0" class="button blue outlined">Conheça a nova marca</a>
+
+            <li class="main-carousel-slide main-carousel-slide-default has-circle embla__slide">
+                <div class="carousel-content container medium">
+                    <div class="carousel-text">
+                        <p>
+                            Tudo que  a gente faz é para o bem
+                            <span style="color: #8E68FF;">das pessoas</span>,
+                            <span style="color: #2273E1;">do negócio</span>
+                            <span style="color: #55AF7D">e do planeta</span>.
+                        </p>
+
+                        <span>O mundo foi feito para durar. </span>
+
+                        <a href="#0" class="button dark-blue solid">Conheça a nova marca</a>
+                    </div>
+                    <!-- /.carousel-text -->
+
+                    <div class="carousel-image circle-image">
+                        <img src="<?php echo THEME_IMAGES . '/brands/brand-icon.svg' ?>" alt="Ícone da Marca Malwee">
+                    </div>
+                    <!-- /.cover-image -->
+
                 </div>
                 <!-- /.carousel-content -->
 
-                <div class="clip-image">
-                    <img data-aos="fade-right" src="<?php echo THEME_IMAGES . '/temp-image.jpg' ?>" alt="">
-                </div>
-                <!-- /.clip-image -->
-            </li>
-            <li class="main-carousel-slide main-carousel-slide-blue embla__slide">
-                <div class="carousel-content" data-aos="fade-right">
-                    <p>Parcerias positivas são aquelas  que duram muito tempo.</p>
-                    <p><strong>Gerar impacto positivo, além do financeiro. </strong></p>
-                    <p>O mundo foi feito para durar.</p>
-                    <a href="#0" class="button blue outlined">Conheça a nova marca</a>
-                </div>
-                <!-- /.carousel-content -->
-
-                <div class="clip-image">
-                    <img data-aos="fade-right" src="<?php echo THEME_IMAGES . '/temp-image.jpg' ?>" alt="">
-                </div>
-                <!-- /.clip-image -->
+                <div class="circle purple right"></div>
             </li>
         </ul>
         <!-- /.main-carousel -->
