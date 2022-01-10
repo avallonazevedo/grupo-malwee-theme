@@ -75,6 +75,7 @@ header {
   z-index: 99999;
   background-color: #fff;
   overflow: hidden;
+  box-shadow: 1px 1px 10px rgba(#000, 0.1);
   .container {
     display: flex;
     justify-content: space-between;
