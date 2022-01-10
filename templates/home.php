@@ -292,24 +292,23 @@
         </div>
     </div>
     <!-- /.esg-plan-2030 -->
+
+    <section class="instituto-malwee-home">
+        <div class="parallax" data-parallax-image="<?php echo THEME_IMAGES . '/parallax/instituto-malwee-home.jpg' ?>"></div>
+        <div class="container medium">
+            <div class="content">
+                <strong>Transforme seu negócio</strong>
+                <p>Criamos um modelo de loja única e especial, um espaço que privilegia relações, as pessoas e a comunidade local.</p>
+                <a href="#0" class="button white outlined">Conheça o projeto</a>
+            </div>
+            <!-- /.content -->
+        </div>
+        <!-- /.container medium -->
+    </section>
+    <!-- /.instituto-malwee-home -->
+
 </section>
 <!-- /#home-middle -->
-
-<section id="work-with-us">
-    <div class="container medium">
-        <div class="work-with-us-content">
-            <h3 data-aos="fade-up">Trabalhe no Grupo Malwee.</h3>
-            <p data-aos="fade-up">Ter propósito é o que move o nosso time. Vem fazer parte de uma empresa que além de cuidar do mundo, faz roupas que duram.</p>
-            <a data-aos="fade-up" class="button outlined white" href="#0">Quero saber mais</a>
-        </div>
-        <!-- /.work-with-us-content -->
-    </div>
-    <!-- /.container -->
-    <div class="parallax" data-parallax-image="<?php echo THEME_IMAGES . '/work-with-us-banner.jpg' ?>">
-    </div>
-    <!-- /.parallax -->
-</section>
-<!-- /#work-with-us -->
 
 <section id="blog-home">
     <div class="container">
