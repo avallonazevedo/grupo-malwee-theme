@@ -474,6 +474,75 @@
   }
 }
 
+#instituto-malwee {
+  padding: 1em 0;
+  background-color: $light-grey;
+  position: relative;
+  overflow: hidden;
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .description {
+    p {
+      margin: 1em 0;
+    }
+    img {
+      width: 100%;
+      max-width: 750px;
+    }
+    a {
+      font-size: 0.85em;
+    }
+  }
+
+  .cover-image {
+    width: 20em;
+    height: 20em;
+    margin: 0 auto;
+    img {
+      border-radius: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  #instituto-malwee {
+    padding: 3em;
+    text-align: center;
+    .description {
+      padding-bottom: 2em;
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #instituto-malwee {
+    .content {
+      align-items: center;
+      justify-content: space-between;
+
+      .description {
+        width: calc(100% - 26em);
+        img {
+          width: 27.5em;
+        }
+
+        a {
+          font-size: 0.6em;
+        }
+
+      }
+
+      .cover-image {
+        margin: 0 4em 0 2em;
+      }
+    }
+  }
+}
+
+
 // Blog Home
 
 #blog-home {

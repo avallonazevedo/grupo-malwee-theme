@@ -36,6 +36,17 @@
     }
   }
 
+  &.dark-blue {
+    &.outlined {
+      border: 2px solid $dark-blue;
+      color: $dark-blue;
+      &:hover {
+        background-color: $dark-blue;
+        color: #ffff;
+      }
+    }
+  }
+
   &.black {
     &.outlined {
       border: 2px solid $grey-boulder;

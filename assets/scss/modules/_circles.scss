@@ -1,0 +1,16 @@
+.circle {
+  position: absolute;
+  width: 20em;
+  height: 20em;
+  border-radius: 100%;
+  border: 2px solid;
+  &.purple {
+    border-color: $people-color;
+  }
+
+  &.right {
+    right: 0;
+    top: 50%;
+    transform: translate(50%, -50%);
+  }
+}

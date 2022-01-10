@@ -306,9 +306,36 @@
         <!-- /.container medium -->
     </section>
     <!-- /.instituto-malwee-home -->
-
 </section>
 <!-- /#home-middle -->
+
+<section id="instituto-malwee">
+    <div class="container medium">
+        <div class="content">
+            <div class="description">
+                <img src="<?php echo THEME_IMAGES . '/brands/instituto-malwee.png' ?>" alt="Logo Instituto Malwee">
+                <p>
+                    Construímos hoje, o amanhã. <br>
+                    Com foco na infância e meio ambiente, investimos no futuro.
+                </p>
+                <a href="#0" class="button dark-blue outlined">Conheça o projeto</a>
+            </div>
+            <!-- /.description -->
+
+            <div class="cover-image">
+                <img src="<?php echo THEME_IMAGES . '/instituto-malwee.jpg' ?>" alt="Foto Instituto Malwee">
+            </div>
+            <!-- /.cover-image -->
+        </div>
+        <!-- /.content -->
+    </div>
+    <!-- /.container medium -->
+
+
+    <div class="circle right purple" aria-label="Círculo decorativo"></div>
+
+</section>
+<!-- /#instituto-malwee -->
 
 <section id="blog-home">
     <div class="container">
