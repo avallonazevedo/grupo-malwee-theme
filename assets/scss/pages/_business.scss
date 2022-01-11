@@ -53,6 +53,11 @@
         margin-top: -6em;
       }
     }
+
+    p {
+      margin: 0;
+    }
+
   }
 }
 
@@ -64,5 +69,43 @@
         margin-left: -2em;
       }
     }
+  }
+}
+
+
+#benefits {
+  padding: 5em 0;
+  .content {
+    display: grid;
+    grid-gap: 3em;
+  }
+
+  .entry-text {
+    font-weight: bold;
+    font-size: 2.2em;
+    line-height: 1.5;
+  }
+
+  .description {
+    line-height: 1.5;
+    font-size: 1.2em;
+  }
+
+}
+
+@media only screen and (min-width: 992px) {
+  #benefits {
+    .content {
+      grid-template-columns: 1.3fr 2fr;
+    }
+
+    .entry-text {
+      font-size: 1.3em;
+    }
+
+    .description {
+      font-size: 1.05em;
+    }
+
   }
 }
