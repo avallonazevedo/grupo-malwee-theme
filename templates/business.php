@@ -126,12 +126,48 @@
             <button type="button" class="business-example-carousel-next">
                 <img src="<?php echo THEME_IMAGES . '/icons/arrow-right.svg' ?>" alt="Ícone seta direita">
             </button>
-
         </div>
         <!-- /.business-example-carousel -->
-
     </div>
     <!-- /.business-example -->
+
+    <div class="description-with-image image-right bg-white">
+        <div class="description">
+            <span class="text text-dar-blue">Rede Franqueada</span>
+            <h4 class="text text-business">Investir com o Grupo Malwee Franquias é um grande negócio</h4>
+
+            <p class="text text-dark-blue">Essa é a oportunidade de uma parceria sustentável e duradoura. A rede de franquias do Grupo Malwee possui um formato de operação que minimiza os riscos e maximiza resultados. Buscamos as melhores práticas de gestão de loja e processos inovadores para assegurar que sua loja se mantenha sempre à frente em estilo e qualidade, apresentando-se como uma marca sólida, conhecida e confiável.</p>
+
+            <a class="button solid blue rounded bold uppercase medium spacing" href="#0">Quero ser franqueado</a>
+
+        </div>
+        <!-- /.description -->
+
+        <div class="cover-image">
+            <img src="<?php echo THEME_IMAGES . '/business-model.jpg' ?>" alt="Modelo de Negócio Malwee">
+        </div>
+        <!-- /.cover-image -->
+    </div>
+    <!-- /.description-with-image image-right -->
+
+    <div class="description-with-image image-left bg-dark-blue">
+        <div class="description">
+            <span class="text text-white">Rede Multimarca</span>
+            <h4 class="text text-business">Onde tem Grupo Malwee tem moda sustentável e feita para durar.</h4>
+
+            <p class="text text-white">O Grupo Malwee está presente em mais de 25 mil lojas multimarcas por todo o Brasil, com um portfólio completo para atender toda a família. Se você é lojista multimarca, entre em contato com nosso time de representantes comerciais e seja nosso parceiro.</p>
+
+            <a class="button solid blue rounded bold uppercase medium spacing" href="#0">Quero falar com um representante</a>
+
+        </div>
+        <!-- /.description -->
+
+        <div class="cover-image">
+            <img src="<?php echo THEME_IMAGES . '/business-model.jpg' ?>" alt="Modelo de Negócio Malwee">
+        </div>
+        <!-- /.cover-image -->
+    </div>
+    <!-- /.description-with-image image-right -->
 
 </section>
 <!-- /#business-model -->

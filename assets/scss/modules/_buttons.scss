@@ -25,6 +25,15 @@
   }
 
   &.blue {
+
+    &.solid {
+      background-color: $blue;
+      color: #fff;
+      &:hover {
+        background-color: $dark-blue;
+      }
+    }
+
     &.outlined {
       border: 2px solid $blue;
       color: $blue;

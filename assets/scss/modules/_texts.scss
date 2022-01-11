@@ -11,6 +11,11 @@
   &.blue {
     color: $business-color;
   }
+
+  &.text-dark-blue {
+    color: $dark-blue;
+  }
+
   &.text-white {
     color: #fff;
   }
@@ -18,5 +23,4 @@
   &.text-center {
     text-align: center;
   }
-
 }
