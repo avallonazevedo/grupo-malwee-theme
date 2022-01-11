@@ -69,6 +69,70 @@
 
 <section id="business-model">
     <h2>Nossos Modelos de Negócio</h2>
+
+    <div class="description-with-image image-right bg-blue">
+        <div class="description">
+            <span class="text text-white">Rede aqui tem Malwee</span>
+            <h4 class="text text-white">Faça parte da maior e melhor rede do varejo de rua do Brasil</h4>
+
+            <p class="text text-white">A rede Aqui Tem Malwee é muito mais que uma loja de roupas: É um modelo de negócio sustentável, com o knowhow de marcas consolidadas no mercado e benefícios exclusivos para lojistas. </p>
+            <p class="text text-white">Através de um projeto arquitetônico exclusivo, criamos uma loja única e especial que privilegia as relações, as pessoas e a comunidade local.</p>
+
+            <a class="button solid white rounded bold uppercase medium spacing" href="#0">Quero ser lojista</a>
+
+        </div>
+        <!-- /.description -->
+
+        <div class="cover-image">
+            <img src="<?php echo THEME_IMAGES . '/business-model.jpg' ?>" alt="Modelo de Negócio Malwee">
+        </div>
+        <!-- /.cover-image -->
+    </div>
+    <!-- /.description-with-image image-right -->
+
+
+    <div class="business-example">
+        <div class="container medium">
+            <h2 class="text text-business text-center">Conheça exemplos de lojas Aqui tem Malwee</h2>
+        </div>
+        <!-- /.container medium -->
+
+        <div class="business-example-carousel">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide cover-image">
+                    <img src="<?php echo THEME_IMAGES . '/temporary/aqui-tem-malwee.jpg' ?>" alt="Aqui Tem Malwee">
+                    <span class="legend">São Lourenço</span>
+                </div>
+                <!-- /.swiper-slide -->
+
+                <div class="swiper-slide cover-image">
+                    <img src="<?php echo THEME_IMAGES . '/temporary/aqui-tem-malwee.jpg' ?>" alt="Aqui Tem Malwee">
+                    <span class="legend">São Lourenço</span>
+                </div>
+                <!-- /.swiper-slide -->
+
+                <div class="swiper-slide cover-image">
+                    <img src="<?php echo THEME_IMAGES . '/temporary/aqui-tem-malwee.jpg' ?>" alt="Aqui Tem Malwee">
+                    <span class="legend">São Lourenço</span>
+                </div>
+                <!-- /.swiper-slide -->
+            </div>
+            <!-- /.swiper-wrapper -->
+
+            <button type="button" class="business-example-carousel-prev">
+                <img src="<?php echo THEME_IMAGES . '/icons/arrow-left.svg' ?>" alt="Ícone seta esquerda">
+            </button>
+
+            <button type="button" class="business-example-carousel-next">
+                <img src="<?php echo THEME_IMAGES . '/icons/arrow-right.svg' ?>" alt="Ícone seta direita">
+            </button>
+
+        </div>
+        <!-- /.business-example-carousel -->
+
+    </div>
+    <!-- /.business-example -->
+
 </section>
 <!-- /#business-model -->
 

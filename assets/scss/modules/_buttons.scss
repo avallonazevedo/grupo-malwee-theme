@@ -3,6 +3,27 @@
   font-size: 0.65em;
   padding: 0.65em 1.25em;
   transition: 0.2s;
+
+  &.spacing {
+    letter-spacing: 1px;
+  }
+
+  &.medium {
+    padding: 1.6em 2.5em;
+  }
+
+  &.rounded {
+    border-radius: 12px;
+  }
+
+  &.bold {
+    font-weight: bold;
+  }
+
+  &.uppercase {
+    text-transform: uppercase;
+  }
+
   &.blue {
     &.outlined {
       border: 2px solid $blue;
@@ -11,6 +32,18 @@
         background-color: $blue;
         color: #fff;
       }
+    }
+  }
+
+  &.white {
+    &.solid {
+      background-color: #fff;
+      color: $business-color;
+
+      &:hover {
+        background-color: $light-grey;
+      }
+
     }
   }
 
@@ -71,6 +104,15 @@
         background-color: #fff;
         color: #fff;
       }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .button {
+    &.medium {
+      min-width: 302px;
+      justify-content: center;
     }
   }
 }
