@@ -21,7 +21,6 @@
 	<!-- /.content -->
 
 	<div class="circle right green"></div>
-
 </section>
 <!-- /#intro.business -->
 
@@ -39,9 +38,38 @@
             <!-- /.description -->
         </div>
         <!-- /.content -->
+
+        <ul class="benefits-list">
+            <li>
+                <img src="<?php echo THEME_IMAGES . '/icons/gestao.svg' ?>" alt="Ícone Gestão">
+                <p>Gestão focada no <br> conceito de <u>open innovation</u></p>
+            </li>
+
+            <li>
+                <img src="<?php echo THEME_IMAGES . '/icons/beneficios.svg' ?>" alt="Ícone Benefícios">
+                <p><u>Benefícios exclusivos</u> <br> para lojistas </p>
+            </li>
+
+            <li>
+                <img src="<?php echo THEME_IMAGES . '/icons/cobertura-nacional.svg' ?>" alt="Ícone Cobertura Nacional">
+                <p>Cobertura nacional <br> de <u>atendimento ao lojista</u></p>
+            </li>
+
+            <li>
+                <img src="<?php echo THEME_IMAGES . '/icons/ferramentas-online.svg' ?>" alt="Ícone Ferramentas Online">
+                <p><u>Ferramentas</u> online e <br> <u>treinamentos</u> em varejo</p>
+            </li>
+        </ul>
+        <!-- /.benefits-list -->
+
     </div>
     <!-- /.container medium -->
 </section>
 <!-- /#benefits -->
+
+<section id="business-model">
+    <h2>Nossos Modelos de Negócio</h2>
+</section>
+<!-- /#business-model -->
 
 <?php get_footer(); ?>

@@ -90,7 +90,26 @@
     line-height: 1.5;
     font-size: 1.2em;
   }
+}
 
+.benefits-list {
+  display: grid;
+  grid-gap: 2em;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 4em;
+  li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    img {
+      width: 8em;
+    }
+    p {
+      padding-top: 1em;
+      font-size: 1.2em;
+    }
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -107,5 +126,29 @@
       font-size: 1.05em;
     }
 
+    .benefits-list {
+      grid-template-columns: repeat(4, 1fr);
+      margin: 0 -2em;
+      li {
+        img {
+          width: 5em;
+        }
+        p {
+          font-size: 0.8em;
+        }
+      }
+    }
+  }
+}
+
+#business-model {
+  padding: 3em 0;
+  background-color: $light-grey;
+  h2 {
+    padding: 0 2em;
+    text-align: center;
+    text-transform: uppercase;
+    color: $dark-blue;
+    font-size: 1.55em;
   }
 }
