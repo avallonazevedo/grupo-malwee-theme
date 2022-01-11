@@ -1,0 +1,68 @@
+#intro {
+  &.business {
+    padding: 2em;
+    position: relative;
+    background-color: $business-color;
+    overflow: hidden;
+
+    .intro-text, .cover-image, .circle {
+      width: 26em;
+      height: 26em;
+    }
+
+    .content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      .intro-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 1em 3em;
+        border-radius: 100%;
+        border: 2px solid $dark-blue;
+        color: #fff;
+        strong {
+          font-size: 2.4em;
+          display: block;
+          padding-bottom: 0.25em;
+        }
+        span {
+          font-weight: bold;
+          font-size: 1.1em;
+        }
+      }
+
+      .cover-image {
+        img {
+          border-radius: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  #intro {
+    &.business {
+      .cover-image {
+        margin-top: -6em;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #intro {
+    &.business {
+      .cover-image {
+        position: relative;
+        margin-left: -2em;
+      }
+    }
+  }
+}

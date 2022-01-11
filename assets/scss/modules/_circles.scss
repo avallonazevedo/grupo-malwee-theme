@@ -7,6 +7,9 @@
   &.purple {
     border-color: $people-color;
   }
+  &.green {
+    border-color: $green;
+  }
 }
 
 @media only screen and (max-width: 991px) {
