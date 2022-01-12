@@ -1,5 +1,7 @@
 
 .description-with-image {
+  position: relative;
+  overflow: hidden;
   &.with-container {
     padding: 2.5em 0;
   }
@@ -109,6 +111,12 @@
   padding: 1.45em 0;
   position: relative;
 
+  &.small {
+    h4 {
+      font-size: 1.5em;
+    }
+  }
+
   .circle, .cover-image {
     width: 15em;
     height: 15em;
@@ -129,6 +137,12 @@
     font-size: 0.75em;
     text-transform: uppercase;
     letter-spacing: 2px;
+
+    &.description-legend {
+      display: block;
+      font-size: 0.72em;
+      padding-bottom: 0.5em;
+    }
   }
 }
 
@@ -152,13 +166,13 @@
   .text-with-circle-image {
 
     .cover-image, .circle {
-      width: 23em;
-      height: 23em;
+      width: 20em;
+      height: 20em;
     }
 
     .cover-image {
       position: relative;
-      transform: translateX(calc(11.5em - 7.5vw));
+      transform: translateX(calc(10em - 7.5vw));
     }
 
     .content {
@@ -166,6 +180,19 @@
       flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
+    }
+
+    .description {
+      width: calc(100% - 30em);
+    }
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .text-with-circle-image {
+    .cover-image, .circle {
+      width: 23em;
+      height: 23em;
     }
 
     .description {

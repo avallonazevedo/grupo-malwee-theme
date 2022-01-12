@@ -248,4 +248,53 @@
 </div>
 <!-- /.app-malwee-benefits -->
 
+<section id="partners-to-business" class="text-with-circle-image bg-blue small">
+    <div class="circle left solid green hide-desktop-down"></div>
+
+    <div class="container small">
+        <div class="content">
+            <div class="cover-image">
+                <img class="rounded-image" src="<?php echo THEME_IMAGES . '/partners.jpg' ?>" alt="Parceria para negócios sustentáveis e de sucesso">
+            </div>
+            <!-- /.cover-image rounded-image -->
+
+            <div class="description">
+                <span class="text text-dark-blue description-legend">Programa Malwee Abraça o Varejo</span>
+                <h4 class="text text-white">Parceria para negócios <br> sustentáveis e de sucesso</h4>
+                <p class="text text-white">Para nós, crescimento só faz sentido quando todos crescemos juntos. Em parceria com o Sebrae, criamos o Programa Malwee Abraça o Varejo (PMAV) para aprimorar a gestão e a performance dos nossos lojistas, desenvolvendo competências que os tornem mais competitivos e lucrativos.</p>
+            </div>
+            <!-- /.description -->
+        </div>
+        <!-- /.content -->
+    </div>
+    <!-- /.container small -->
+</section>
+<!-- /#inovation.text-with-circle-image -->
+
+<div id="papo-fashion" class="description-with-image image-right with-container bg-light-grey">
+    <div class="container small">
+        <div class="content">
+            <div class="description">
+                <span class="text text-dark-blue">Papo Fashion</span>
+                <h4 class="text text-business">Plataforma gratuita de conteúdos online para otimizar a gestão dos negócios</h4>
+                <p class="text text-dark-blue">Integrar loja física ao mundo digital não é só gerar novas oportunidades de venda. É uma necessidade para qualquer lojista que quer aprofundar a conexão com seu consumidor. E isso é possível com a plataforma A Sua Loja Malwee, desenvolvida exclusivamente pelo Grupo Malwee e a startup ShowKase.</p>
+
+                <p class="text text-dark-blue">O Papo Fashion é um portal com conteúdos atrativos, papos leves e linguagem moderna feitos sob medida para todos os lojistas de moda. Os conteúdos incluem mini cursos, séries, dicas, dados e informações atuais para ajudar o sucesso do seu negócio. <br>
+                  Não perca tempo e assista todas as aulas disponíveis no portal.
+                </p>
+            </div>
+            <!-- /.description -->
+            <div class="cover-image">
+                <img class="rounded-image" src="<?php echo THEME_IMAGES . '/papo-fashion.jpg' ?>" alt="Papo Fashion">
+            </div>
+            <!-- /.cover-image -->
+
+            <div class="circle green right"></div>
+        </div>
+        <!-- /.content -->
+    </div>
+    <!-- /.container small -->
+</div>
+<!-- /.description-with-image image-right -->
+
 <?php get_footer(); ?>

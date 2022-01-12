@@ -9,6 +9,9 @@
   }
   &.green {
     border-color: $green;
+    &.solid {
+      background-color: $green;
+    }
   }
 
   &.blue {
