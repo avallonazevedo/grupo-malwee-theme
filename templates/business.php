@@ -168,8 +168,33 @@
         <!-- /.cover-image -->
     </div>
     <!-- /.description-with-image image-right -->
-
 </section>
 <!-- /#business-model -->
+
+<section id="innovation" class="text-with-circle-image">
+    <div class="circle left solid blue hide-desktop-down"></div>
+
+    <div class="container small">
+        <div class="content">
+            <div class="cover-image">
+                <img class="rounded-image" src="<?php echo THEME_IMAGES . '/innovation.jpg' ?>" alt="Inovação e Apoio ao Lojista">
+            </div>
+            <!-- /.cover-image rounded-image -->
+
+            <div class="description">
+                <h4 class="text text-blue">Inovação e <br> Apoio ao Lojista</h4>
+                <p>Queremos cultivar relações duradouras e ser o melhor parceiro de negócio dos nossos lojistas. Por isso, vamos além de oferecer melhores formas de negociação e benefícios comerciais. Ajudamos com suporte na gestão, treinamentos e soluções para o seu negócio.</p>
+
+                <span class="text text-blue">Conheça as iniciativas do Grupo <br> Malwee que potenciam os negócios</span>
+
+            </div>
+            <!-- /.description -->
+        </div>
+        <!-- /.content -->
+    </div>
+    <!-- /.container small -->
+
+</section>
+<!-- /#inovation.text-with-circle-image -->
 
 <?php get_footer(); ?>
