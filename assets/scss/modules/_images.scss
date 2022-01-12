@@ -5,6 +5,16 @@
     height: 100%;
     overflow: hidden;
   }
+
+  &.bg-image {
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+  }
+
 }
 
 .rounded-image {
