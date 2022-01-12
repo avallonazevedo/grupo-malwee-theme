@@ -16,16 +16,22 @@ body {
 // Container
 
 .container {
-  width: 97.5%;
   margin: 0 auto;
-  &.medium {
-    width: 92.5%;
-  }
+  width: 85%;
+}
 
-  &.small {
-    width: 85%;
-  }
+@media only screen and (min-width: 992px) {
+  .container {
+    width: 97.5%;
 
+    &.medium {
+      width: 92.5%;
+    }
+
+    &.small {
+      width: 85%;
+    }
+  }
 }
 
 // Header

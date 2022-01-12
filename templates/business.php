@@ -186,15 +186,66 @@
                 <p>Queremos cultivar relações duradouras e ser o melhor parceiro de negócio dos nossos lojistas. Por isso, vamos além de oferecer melhores formas de negociação e benefícios comerciais. Ajudamos com suporte na gestão, treinamentos e soluções para o seu negócio.</p>
 
                 <span class="text text-blue">Conheça as iniciativas do Grupo <br> Malwee que potenciam os negócios</span>
-
             </div>
             <!-- /.description -->
         </div>
         <!-- /.content -->
     </div>
     <!-- /.container small -->
-
 </section>
 <!-- /#inovation.text-with-circle-image -->
+
+<div class="description-with-image image-right image-height-full with-container bg-light-grey">
+    <div class="container small">
+        <div class="content">
+            <div class="description">
+                <span class="text text-dark-blue">A [Sua]. Loja Malwee</span>
+                <h4 class="text text-business">Crie uma loja virtual em menos de uma hora</h4>
+                <p class="text text-dark-blue">Integrar loja física ao mundo digital não é só gerar novas oportunidades de venda. É uma necessidade para qualquer lojista que quer aprofundar a conexão com seu consumidor. E isso é possível com a plataforma A Sua Loja Malwee, desenvolvida exclusivamente pelo Grupo Malwee e a startup ShowKase.</p>
+
+                <p class="text text-dark-blue">Nela, nossos lojistas podem criar uma loja online de forma rápida e simples, com uma série de recursos exclusivos para turbinar as vendas e ficar ainda mais próximo do seu consumidor.</p>
+            </div>
+            <!-- /.description -->
+            <div class="cover-image">
+                <img src="<?php echo THEME_IMAGES . '/app-malwee.jpg' ?>" alt="Exemplo App Malwee">
+            </div>
+            <!-- /.cover-image -->
+        </div>
+        <!-- /.content -->
+    </div>
+    <!-- /.container small -->
+</div>
+<!-- /.description-with-image image-right -->
+
+<div class="app-malwee-benefits bg-light-grey">
+    <div class="container small">
+        <ul class="app-malwee-benefits-list">
+            <li>
+                <img src="<?php echo THEME_IMAGES . '/icons/shop.svg' ?>" alt="Tudo em um só lugar">
+                <strong>Tudo em um só lugar</strong>
+                <p>Criação de catálogos de produtos (mala direta), gestão de conteúdo das redes sociais, presença digital da sua loja física</p>
+            </li>
+
+            <li>
+                <img src="<?php echo THEME_IMAGES . '/icons/support.svg' ?>" alt="Atendimento personalizado">
+                <strong>Atendimento personalizado</strong>
+                <p>Time de apoio para treinamento, suporte e planejamento de ações para a loja</p>
+            </li>
+
+            <li>
+                <img src="<?php echo THEME_IMAGES . '/icons/rocket.svg' ?>" alt="Custo zero para começar">
+                <strong>Custo zero para começar</strong>
+                <p>30 dias grátis para novos assinantes <strong>+de 300 clientes</strong> do Grupo Malwee estão utilizando a ferramenta
+                </p>
+            </li>
+        </ul>
+
+
+        <a class="button solid blue rounded bold uppercase medium spacing" href="#0">Conheça sua loja malwee</a>
+
+    </div>
+    <!-- /.container small -->
+</div>
+<!-- /.app-malwee-benefits -->
 
 <?php get_footer(); ?>
