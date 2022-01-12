@@ -282,6 +282,8 @@
                 <p class="text text-dark-blue">O Papo Fashion é um portal com conteúdos atrativos, papos leves e linguagem moderna feitos sob medida para todos os lojistas de moda. Os conteúdos incluem mini cursos, séries, dicas, dados e informações atuais para ajudar o sucesso do seu negócio. <br>
                   Não perca tempo e assista todas as aulas disponíveis no portal.
                 </p>
+
+                <a class="button solid blue rounded bold uppercase medium spacing" href="#0">Assista o papo fashion</a>
             </div>
             <!-- /.description -->
             <div class="cover-image">
