@@ -22,4 +22,18 @@
 </section>
 <!-- /#brand-disclaimer -->
 
+<section id="brand-manifest">
+    <span class="text text-dark-blue">Manifesto da Marca</span>
+    <h2 class="text text-dark-blue">Não dá pra trocar de mundo como quem troca de roupa</h2>
+
+    <div class="manifest-video cover-image">
+        <img src="<?php echo THEME_IMAGES . '/temporary/aqui-tem-malwee.jpg' ?>" alt="Manifesto da Marca <?php the_title(); ?>">
+        <a class="modal-open" href="#0">
+            <img src="<?php echo THEME_IMAGES . '/icons/play-white.svg' ?>" alt="Ícone Play">
+        </a>
+    </div>
+
+</section>
+<!-- /#brand-manifest -->
+
 <?php get_footer(); ?>
