@@ -643,7 +643,7 @@
 
 // Blog Home
 
-#blog-home {
+#blog {
   h2 {
     margin: 0.75em 0;
     font-size: 1.65em;
@@ -653,7 +653,7 @@
   }
 }
 
-.blog-home-post-list {
+.blog-post-list {
   padding: 0 0 1em 0 !important;
   .post {
     padding: 2.5em;
@@ -724,7 +724,7 @@
 }
 
 @media only screen and (min-width: 992px) {
-  .blog-home-post-list {
+  .blog-post-list {
     .post {
       align-items: center;
       justify-content: space-between;

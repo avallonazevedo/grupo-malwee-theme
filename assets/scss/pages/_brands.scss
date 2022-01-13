@@ -171,3 +171,14 @@
     }
   }
 }
+
+body {
+  &.page-template-brands {
+    #blog {
+      h2 {
+        font-weight: bold;
+        letter-spacing: 1px;
+      }
+    }
+  }
+}

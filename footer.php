@@ -1,9 +1,20 @@
-<section id="blog-home">
+<?php
+    $is_brand_page = is_page_template('templates/brands.php');
+    $page_id = get_the_ID();
+?>
+
+<section id="blog">
     <div class="container">
-        <h2 class="text blue" data-aos="fade-up">Notícias</h2>
+        <?php if($is_brand_page): ?>
+            <h2 class="text dark-blue text-center" data-aos="fade-up">
+                Recentemente no mundo <?php echo get_the_title($page_id); ?>
+            </h2>
+        <?php else: ?>
+            <h2 class="text blue" data-aos="fade-up">Notícias</h2>
+        <?php endif; ?>
     </div>
     <!-- /.container -->
-    <ul style="display: none;" class="blog-home-post-list">
+    <ul style="display: none;" class="blog-post-list">
         <li class="post post-category-business">
             <div class="post-content">
                 <a data-aos="fade-up" class="category" href="#0">Malwee</a>
@@ -112,7 +123,7 @@
     </div>
     <!-- /#more-posts -->
 </section>
-<!-- /#blog-home -->
+<!-- /#blog -->
 
 <footer data-aos="fade-up">
     <div class="footer-column brands-column">
