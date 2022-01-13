@@ -32,8 +32,51 @@
             <img src="<?php echo THEME_IMAGES . '/icons/play-white.svg' ?>" alt="Ícone Play">
         </a>
     </div>
-
 </section>
 <!-- /#brand-manifest -->
+
+<ul class="brand-information">
+    <li class="text text-dark-blue">
+        <strong>Acesse o ecommerce</strong>
+        <p>Saiba mais sobre nossos produtos e coleções acessando nosso ecommerce.</p>
+        <a class="button solid dark-blue" href="#0">Acessar</a>
+    </li>
+
+    <li class="text text-dark-blue">
+        <strong>Seja um revendedor</strong>
+        <p>Entre em contato e descubra como você pode começar a vender Malwee.</p>
+        <a class="button solid dark-blue" href="#0">Acessar</a>
+    </li>
+
+    <li class="text text-dark-blue">
+        <strong>Seja um franqueado</strong>
+        <p>Saiba mais sobre as vantagens de ser um franqueado da marca.</p>
+        <a class="button solid dark-blue" href="#0">Acessar</a>
+    </li>
+
+    <li class="text text-dark-blue">
+        <strong>Seja um franqueado</strong>
+        <p>Acompanhe o dia a dia da marca e fique sabendo de todas as novidades.</p>
+
+        <div class="brand-social-list">
+	        <?php
+	        $social = array(
+		        'facebook' => 'https://facebook.com',
+		        'instagram' => 'https://instagram.com',
+		        'twitter' => 'https://twitter.com',
+		        'youtube' => 'https://youtube.com',
+		        'linkedin' => 'https://linkedin.com'
+	        );
+	        ?>
+                <?php foreach ($social as $key => $social_item): ?>
+                    <a href="<?php echo $social_item ;?>" title="Siga-nos no <?php echo $social_item; ?>">
+                        <img src="<?php echo THEME_IMAGES . '/icons/' . $key ?>-blue.svg" alt="<?php echo $social_item; ?>">
+                    </a>
+                <?php endforeach; ?>
+        </div>
+        <!-- /.social-list -->
+    </li>
+</ul>
+<!-- /.brand-information -->
 
 <?php get_footer(); ?>
