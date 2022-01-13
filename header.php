@@ -64,11 +64,11 @@
 
         <div data-aos="fade-left">
 	        <?php
-	        wp_nav_menu(array(
-		        'theme_location' => 'main',
-		        'container' => 'nav',
-		        'container_id' => 'desktop-menu',
-	        ));
+                wp_nav_menu(array(
+                    'theme_location' => 'main',
+                    'container' => 'nav',
+                    'container_id' => 'desktop-menu',
+                ));
 	        ?>
         </div>
     </div>

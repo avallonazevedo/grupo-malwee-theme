@@ -195,6 +195,10 @@
       height: 23em;
     }
 
+    .cover-image {
+      transform: translateX(calc(11.5em - 7.5vw));
+    }
+
     .description {
       width: calc(100% - 35em);
     }

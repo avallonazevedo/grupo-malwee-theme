@@ -22,10 +22,10 @@
             <li class="main-carousel-slide main-carousel-slide-video embla__slide cover-image">
                 <img src="<?php echo THEME_IMAGES . '/templates/video.jpg' ?>" alt="Vídeo Placeholder">
                 <div class="carousel-content cover-image">
-                   <h3>O mundo foi feito para durar.</h3>
+                   <h3 data-aos="fade-up">O mundo foi feito para durar.</h3>
                     <a class="modal-open" href="#0">
-                        <img src="<?php echo THEME_IMAGES . '/icons/play-white.svg' ?>" alt="Ícone Play">
-                        <span>Assista nosso manifesto</span>
+                        <img data-aos="fade-up" src="<?php echo THEME_IMAGES . '/icons/play-white.svg' ?>" alt="Ícone Play">
+                        <span data-aos="fade-up">Assista nosso manifesto</span>
                     </a>
                 </div>
                 <!-- /.carousel-content -->
@@ -34,16 +34,16 @@
             <li class="main-carousel-slide main-carousel-slide-default has-circle embla__slide">
                 <div class="carousel-content container medium">
                     <div class="carousel-text">
-                        <p>
+                        <p data-aos="fade-up">
                             Tudo que  a gente faz é para o bem
                             <span style="color: #8E68FF;">das pessoas</span>,
                             <span style="color: #2273E1;">do negócio</span>
                             <span style="color: #55AF7D">e do planeta</span>.
-                        </p>
+                        </p data-aos="fade-up">
 
-                        <span>O mundo foi feito para durar. </span>
+                        <span data-aos="fade-up">O mundo foi feito para durar. </span>
 
-                        <a href="#0" class="button dark-blue solid">Conheça a nova marca</a>
+                        <a data-aos="fade-down" href="#0" class="button dark-blue solid">Conheça a nova marca</a>
                     </div>
                     <!-- /.carousel-text -->
 
@@ -75,37 +75,37 @@
         </h3>
 
         <ul class="malwee-brand-list">
-            <li>
+            <li data-aos="fade-up">
                 <img class="default-image" src="<?php echo THEME_IMAGES . '/brands/hover-brands/malwee.png' ?>" alt="Marca Malwee">
                 <img class="hover-image" src="<?php echo THEME_IMAGES . '/brands/hover-brands/malwee-hover.png' ?>" alt="Marca Malwee">
             </li>
 
-            <li>
+            <li data-aos="fade-up" data-aos-delay="100">
                 <img class="default-image" src="<?php echo THEME_IMAGES . '/brands/hover-brands/enfim.png' ?>" alt="Marca Enfim">
                 <img class="hover-image" src="<?php echo THEME_IMAGES . '/brands/hover-brands/enfim-hover.png' ?>" alt="Marca Enfim">
             </li>
 
-            <li>
+            <li data-aos="fade-up" data-aos-delay="200">
                 <img class="default-image" src="<?php echo THEME_IMAGES . '/brands/hover-brands/malwee-kids.png' ?>" alt="Marca Malwee Kids">
                 <img class="hover-image" src="<?php echo THEME_IMAGES . '/brands/hover-brands/malwee-kids-hover.png' ?>" alt="Marca Malwee Kids">
             </li>
 
-            <li>
+            <li data-aos="fade-up" data-aos-delay="300">
                 <img class="default-image" src="<?php echo THEME_IMAGES . '/brands/hover-brands/carinhoso.png' ?>" alt="Marca Carinhoso">
                 <img class="hover-image" src="<?php echo THEME_IMAGES . '/brands/hover-brands/carinhoso-hover.png' ?>" alt="Marca Carinhoso">
             </li>
 
-            <li>
+            <li data-aos="fade-up" data-aos-delay="400">
                 <img class="default-image" src="<?php echo THEME_IMAGES . '/brands/hover-brands/zig-zig-zaa.png' ?>" alt="Marca Zig Zig Zaa">
                 <img class="hover-image" src="<?php echo THEME_IMAGES . '/brands/hover-brands/zig-zig-zaa-hover.png' ?>" alt="Marca Zig Zig Zaa">
             </li>
         </ul>
         <!-- /.malwee-brand-list -->
 
-        <h3>Somos movidos por relações duradouras</h3>
+        <h3 data-aos="fade-bottom">Somos movidos por relações duradouras</h3>
 
         <ul class="business-people-planet">
-            <li>
+            <li data-aos="fade-up">
                 <strong class="text text-business">negócios</strong>
                 <img src="<?php echo THEME_IMAGES . '/business.jpg' ?>" alt="Negócios">
 
@@ -114,7 +114,7 @@
                 <a href="#0">Seja nosso parceiro</a>
             </li>
 
-            <li>
+            <li data-aos="fade-up" data-aos-delay="200">
                 <strong class="text text-people">pessoas</strong>
                 <img src="<?php echo THEME_IMAGES . '/people.jpg' ?>" alt="Pessoas">
 
@@ -123,7 +123,7 @@
                 <a href="#0">Trabalhe conosco</a>
             </li>
 
-            <li>
+            <li data-aos="fade-up" data-aos-delay="400">
                 <strong class="text text-planet">planeta</strong>
                 <img src="<?php echo THEME_IMAGES . '/planet.jpg' ?>" alt="Planeta">
 
@@ -309,16 +309,16 @@
     <div class="container medium">
         <div class="content">
             <div class="description">
-                <img src="<?php echo THEME_IMAGES . '/brands/instituto-malwee.png' ?>" alt="Logo Instituto Malwee">
-                <p>
+                <img data-aos="fade-up" src="<?php echo THEME_IMAGES . '/brands/instituto-malwee.png' ?>" alt="Logo Instituto Malwee">
+                <p data-aos="fade-up">
                     Construímos hoje, o amanhã. <br>
                     Com foco na infância e meio ambiente, investimos no futuro.
                 </p>
-                <a href="#0" class="button dark-blue outlined">Conheça o projeto</a>
+                <a data-aos="fade-up" href="#0" class="button dark-blue outlined">Conheça o projeto</a>
             </div>
             <!-- /.description -->
 
-            <div class="cover-image">
+            <div class="cover-image" data-aos="fade-left">
                 <img src="<?php echo THEME_IMAGES . '/instituto-malwee.jpg' ?>" alt="Foto Instituto Malwee">
             </div>
             <!-- /.cover-image -->
