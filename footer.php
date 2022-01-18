@@ -232,7 +232,7 @@
 <!-- /#copyright -->
 </main>
 <script src="https://cdn.jsdelivr.net/npm/universal-parallax@1.3.2/dist/universal-parallax.min.js"></script>
-<script src="<?php echo THEME_ASSETS_DIST  . '/index.js?v=1' ?>"></script>
+<script src="<?php echo THEME_ASSETS_DIST  . '/index.js?v=1.1' ?>"></script>
 <?php wp_footer(); ?>
 </body>
 </html>
