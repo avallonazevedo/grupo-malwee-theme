@@ -217,6 +217,14 @@ footer {
   }
 }
 
+body {
+  &.page-template-malwee-group {
+    footer {
+      margin-top: 0;
+    }
+  }
+}
+
 .brands-column {
   display: flex;
   flex-direction: column;

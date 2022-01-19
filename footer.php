@@ -3,6 +3,8 @@
     $page_id = get_the_ID();
 ?>
 
+<?php if(!is_page_template('templates/malwee-group.php')): ?>
+
 <section id="blog">
     <div class="container">
         <?php if($is_brand_page): ?>
@@ -124,6 +126,8 @@
     <!-- /#more-posts -->
 </section>
 <!-- /#blog -->
+
+<?php endif; ?>
 
 <footer data-aos="fade-up">
     <div class="footer-column brands-column">

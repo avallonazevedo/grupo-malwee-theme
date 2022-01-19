@@ -574,9 +574,30 @@
 
 #instituto-malwee {
   padding: 1em 0;
-  background-color: $light-grey;
   position: relative;
   overflow: hidden;
+
+  &.small {
+    .content {
+      .description {
+        p {
+          line-height: 1;
+        }
+        span {
+          display: block;
+          padding-bottom: 1.25em;
+          line-height: 1.5;
+        }
+
+        a {
+          text-decoration: underline;
+          font-weight: bold;
+          font-size: 0.7em;
+        }
+      }
+    }
+  }
+
   .content {
     display: flex;
     flex-wrap: wrap;
@@ -585,6 +606,7 @@
   .description {
     p {
       margin: 1em 0;
+      font-size: 1.5em;
     }
     img {
       width: 100%;
@@ -617,6 +639,28 @@
 
 @media only screen and (min-width: 992px) {
   #instituto-malwee {
+
+    &.small {
+      padding: 4em 0;
+      .content {
+        .description {
+          //width: calc(100% - 35em);
+          p {
+            font-size: 2em;
+            margin: 0.5em 0;
+            max-width: 15em;
+          }
+          img {
+            width: 17.5em;
+          }
+          span {
+            font-size: 0.9em;
+            max-width: 28em;
+          }
+        }
+      }
+    }
+
     .content {
       align-items: center;
       justify-content: space-between;
@@ -804,6 +848,109 @@
     }
     .post-image {
       height: 12em;
+    }
+  }
+}
+
+// Prizes
+
+#our-prizes {
+  .image, .prize-slide {
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .image {
+    img {
+      width: 15em;
+    }
+    strong {
+      display: block;
+      padding-top: 0.2em;
+      font-size: 1.5em;
+    }
+  }
+}
+
+.our-prizes-carousel {
+  overflow: hidden;
+  position: relative;
+
+  .our-prizes-carousel-prev, .our-prizes-carousel-next {
+    width: 0.6em;
+    top: 40%;
+  }
+}
+
+.arrow-back.our-prizes-carousel-prev {
+  left: 7.5em;
+}
+
+.arrow-next.our-prizes-carousel-next {
+  right: 7.5em;
+}
+
+.prize-slide {
+  color: $business-color;
+  img {
+    width: 10em;
+  }
+
+  strong {
+    display: block;;
+    padding-top: 1.75em;
+    font-size: 1.25em;
+    line-height: 1;
+  }
+
+  p {
+    color: $dark-blue;
+    line-height: 1.5;
+    padding: 1em 0;
+    max-width: 22.5em;
+  }
+
+  a {
+    font-weight: bold;
+    color: $dark-blue;
+    text-decoration: underline;
+    font-size: 0.85em;
+  }
+
+}
+
+@media only screen and (min-width: 992px) {
+  #our-prizes {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: stretch;
+
+    .image, .prize-slide {
+      padding: 3em 5em;
+    }
+
+    .image, .our-prizes-carousel {
+      width: 50%;
+    }
+
+    .prize-slide {
+      p {
+        font-size: 0.65em;
+      }
+      a {
+        font-size: 0.65em;
+      }
+    }
+
+    .our-prizes-carousel {
+      .our-prizes-carousel-prev, .our-prizes-carousel-next {
+        top: 45%;
+      }
     }
   }
 }

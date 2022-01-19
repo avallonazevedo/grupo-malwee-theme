@@ -2,7 +2,7 @@
   display: inline-flex;
   font-size: 0.65em;
   padding: 0.65em 1.25em;
-  transition: 0.2s;
+  transition: all 0.2s !important;
 
   &.spacing {
     letter-spacing: 1px;

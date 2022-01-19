@@ -305,7 +305,7 @@
 </section>
 <!-- /#home-middle -->
 
-<section id="instituto-malwee">
+<section id="instituto-malwee" class="bg-light-grey">
     <div class="container medium">
         <div class="content">
             <div class="description">

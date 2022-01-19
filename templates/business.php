@@ -121,11 +121,11 @@
             </div>
             <!-- /.swiper-wrapper -->
 
-            <button type="button" class="business-example-carousel-prev">
+            <button type="button" class="business-example-carousel-prev arrow-back">
                 <img src="<?php echo THEME_IMAGES . '/icons/arrow-left.svg' ?>" alt="Ícone seta esquerda">
             </button>
 
-            <button type="button" class="business-example-carousel-next">
+            <button type="button" class="business-example-carousel-next arrow-next">
                 <img src="<?php echo THEME_IMAGES . '/icons/arrow-right.svg' ?>" alt="Ícone seta direita">
             </button>
         </div>

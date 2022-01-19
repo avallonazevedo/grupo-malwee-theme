@@ -194,7 +194,7 @@
   }
 }
 
-.business-example-carousel-prev, .business-example-carousel-next {
+.arrow-back, .arrow-next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -213,11 +213,11 @@
   }
 }
 
-.business-example-carousel-prev {
+.arrow-back {
   left: 1em;
 }
 
-.business-example-carousel-next {
+.arrow-next {
   right: 1em;
 }
 

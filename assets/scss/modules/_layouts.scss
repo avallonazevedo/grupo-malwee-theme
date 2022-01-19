@@ -85,7 +85,7 @@
     }
 
     .description {
-      height: 100%;
+      height: auto;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -268,6 +268,69 @@ ul.app-malwee-benefits-list {
         width: 5em;
       }
     }
+  }
+}
 
+.featured-title-with-description {
+  .title {
+    padding: 4em;
+    span {
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 0.8em;
+    }
+    strong {
+      padding-top: 0.35em;
+      display: flex;
+      font-size: 2.25em;
+    }
+  }
+
+  .description {
+    line-height: 1.5;
+    padding: 3em;
+    p {
+      font-size: 1.1em;
+      &:not(:last-of-type) {
+        padding-bottom: 1em;
+      }
+    }
+  }
+}
+
+.featured-title-with-description {
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 992px) {
+  .featured-title-with-description {
+    display: flex;
+    align-items: stretch;
+
+    .title {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      span {
+        font-size: 0.7em;
+      }
+
+      strong {
+        font-size: 2.45em;
+      }
+    }
+
+    .description {
+      padding: 5em 3em;
+      font-size: 0.68em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .title, .description {
+      width: 50%;
+    }
   }
 }
