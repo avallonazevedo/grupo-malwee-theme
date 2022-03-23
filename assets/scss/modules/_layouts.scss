@@ -236,6 +236,7 @@ ul.app-malwee-benefits-list {
 
     p {
       line-height: 1.5;
+      text-align: center;
     }
   }
 }
@@ -306,6 +307,13 @@ ul.app-malwee-benefits-list {
   .featured-title-with-description {
     display: flex;
     align-items: stretch;
+
+    &.wide {
+      .title {
+        padding-top: 7.5em;
+        padding-bottom: 7.5em;
+      }
+    }
 
     .title {
       display: flex;

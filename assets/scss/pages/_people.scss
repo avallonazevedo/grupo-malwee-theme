@@ -1,0 +1,152 @@
+#make-part-of-your-team {
+  padding: 2em 0;
+
+  h4 {
+    font-size: 2.15em;
+    line-height: 1;
+  }
+
+  .content {
+    line-height: 1.5;
+    p {
+      padding: 1em 0;
+    }
+  }
+
+  a {
+    padding: 1em 4em;
+    justify-content: center;
+    letter-spacing: 2px;
+    font-size: 0.6em;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  #make-part-of-your-team {
+    padding: 4em 0;
+    text-align: center;
+    .cover-image {
+      width: 16em;
+      height: 16em;
+      margin: 2em auto 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #make-part-of-your-team {
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .content {
+      width: calc(100% - 25em);
+    }
+
+    .cover-image {
+      width: 20em;
+      height: 20em;
+    }
+  }
+}
+
+#people-carousel-wrapper {
+  position: relative;
+  overflow: hidden;
+
+  .arrow-back, .arrow-next {
+    width: 0.85em;
+  }
+}
+
+.people-carousel-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 3em;
+  .cover-image {
+    width: 18em;
+    height: 18em;
+  }
+  strong, span {
+    display: block;
+  }
+
+  strong {
+    font-size: 2em;
+    line-height: 1;
+  }
+
+  span {
+    font-size: 1.15em;
+  }
+
+  p {
+    padding-top: 1em;
+    line-height: 1.45;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .people-carousel-content {
+    flex-direction: row;
+    padding: 2em 7.5em;
+    .cover-image {
+      width: 20em;
+      height: 20em;
+    }
+    .content {
+      width: calc(100% - 25em);
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .people-carousel-content {
+    text-align: center;
+    .content {
+      padding-top: 2em;
+    }
+  }
+}
+
+.people-carousel-bullets {
+  position: absolute;
+  width: 100%;
+  bottom: 1em;
+  left: 0;
+  z-index: 2;
+  span {
+    border: 1px solid #fff;
+    &.swiper-pagination-bullet-active {
+      background-color: #fff;
+    }
+  }
+}
+
+#our-way {
+  padding: 2em 0;
+  strong {
+    font-size: 1.45em;
+    display: block;
+    text-align: center;
+    padding-bottom: 1.5em;
+  }
+  .manifest-video {
+    width: 100%;
+    max-width: 100%;
+  }
+  span {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-top: 1em;
+    font-size: 0.7em;
+  }
+}

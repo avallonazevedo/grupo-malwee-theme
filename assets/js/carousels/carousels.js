@@ -1,7 +1,7 @@
-import Swiper, { Navigation } from "swiper";
+import Swiper, { Navigation, Pagination } from "swiper";
 import 'swiper/swiper.min.css';
 
-Swiper.use([Navigation]);
+Swiper.use([Navigation, Pagination]);
 
 export function createHereHasMalweeCarousel() {
     return new Swiper('.business-example-carousel', {
@@ -48,8 +48,22 @@ export function createPrizesCarousel() {
     return new Swiper('.our-prizes-carousel', {
         slidesPerView: 1,
         navigation: {
-            prevEl: '.our-prizes-carousel-prev',
+        prevEl: '.our-prizes-carousel-prev',
             nextEl: '.our-prizes-carousel-next',
+    }
+});
+}
+
+export function createPeopleCarousel() {
+    return new Swiper('.people-carousel', {
+        slidesPerView: 1,
+        pagination: {
+            el: '.people-carousel-bullets',
+            clickable: true
+        },
+        navigation: {
+            prevEl: '.people-carousel-prev',
+            nextEl: '.people-carousel-next',
         }
     });
 }

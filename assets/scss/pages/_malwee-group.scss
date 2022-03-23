@@ -1,3 +1,8 @@
+video {
+  width: 100%;
+  max-width: 100%;
+}
+
 .malwee-group-intro {
   padding: 3em 0;
   background-color: $light-grey;
@@ -247,6 +252,17 @@
 
   p {
     padding-top: 0.5em;
+  }
+}
+
+.planet-carousel.timeline-carousel {
+  .timeline-slide {
+    strong {
+      color: $planet-color;
+      &::before {
+        background-color: $planet-color;
+      }
+    }
   }
 }
 

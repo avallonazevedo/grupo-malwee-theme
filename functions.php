@@ -7,6 +7,7 @@ define('THEME_DIR', get_template_directory());
 define('THEME_URL', get_template_directory_uri());
 define('THEME_STATIC', THEME_URL . '/static');
 define('THEME_IMAGES', THEME_STATIC . '/images');
+define('THEME_VIDEOS', THEME_STATIC . '/videos');
 define('THEME_ASSETS', THEME_URL . '/assets');
 define('THEME_ASSETS_DIST', THEME_URL . '/assets/dist');
 define('THEME_INC', THEME_DIR . '/inc');
@@ -21,6 +22,22 @@ define('MALWEE_THEME_VERSION', $theme_version);
 require_once(THEME_FUNCTIONS . '/clean-code.php');
 require_once(THEME_FUNCTIONS . '/generate-title.php');
 require_once(THEME_FUNCTIONS . '/responsive-images.php');
+require_once(THEME_DIR . '/widgets/footer-widgets.php');
+
+$admin_files = array(
+	'redux_core'    => __DIR__ . '/inc/admin/redux-core/framework.php',
+	'theme_options' => __DIR__ . '/inc/admin/theme-options/setup.php',
+);
+
+/* Redux Framework */
+if ( ! class_exists( 'ReduxFramework' ) && file_exists( $admin_files['redux_core'] ) ) {
+	require_once $admin_files['redux_core'];
+}
+
+if ( ! isset( $redux_demo ) && file_exists( $admin_files['theme_options'] ) ) {
+	require_once $admin_files['theme_options'];
+}
+
 
 // Theme Setup
 
@@ -28,6 +45,17 @@ if (!function_exists('malwee_theme_setup')) {
 	function malwee_theme_setup() {
 		// Allow thumbnails
 		add_theme_support( 'post-thumbnails' );
+
+		add_filter(
+			'allowed_block_types_all',
+			function () {
+				return array(
+					'core/heading',
+					'core/list',
+				);
+			}
+		);
+
 
 		// Allow SVG Upload
 		function cc_mime_types($mimes) {
@@ -48,6 +76,7 @@ if (!function_exists('malwee_theme_setup')) {
                 'main' => __('Principal', 'malwee'),
 				'mobile' => __('Mobile', 'malwee'),
 				'header' => __('Header', 'malwee'),
+				'footer' => __('Footer', 'malwee'),
 			)
 		);
 	}

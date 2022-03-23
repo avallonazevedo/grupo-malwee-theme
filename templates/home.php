@@ -1,8 +1,8 @@
 <?php
-	/**
-	 * Template Name: Home
-	 */
-	get_header();
+/**
+ * Template Name: Home
+ */
+get_header();
 ?>
 
 <section id="main-slider">
@@ -19,44 +19,74 @@
     <!-- /#main-slider-controls -->
     <div class="embla" id="embla-carousel">
         <ul class="main-carousel embla__container">
-            <li class="main-carousel-slide main-carousel-slide-video embla__slide cover-image">
-                <img src="<?php echo THEME_IMAGES . '/templates/video.jpg' ?>" alt="Vídeo Placeholder">
-                <div class="carousel-content cover-image">
-                   <h3 data-aos="fade-up">O mundo foi feito para durar.</h3>
-                    <a class="modal-open" href="#0">
-                        <img data-aos="fade-up" src="<?php echo THEME_IMAGES . '/icons/play-white.svg' ?>" alt="Ícone Play">
-                        <span data-aos="fade-up">Assista nosso manifesto</span>
-                    </a>
-                </div>
-                <!-- /.carousel-content -->
-            </li>
+			<?php if(have_rows('lista_de_slides')): while(have_rows('lista_de_slides')): the_row(); ?>
+				<?php $slide_type = get_sub_field('tipo_de_slide'); ?>
+				<?php if($slide_type === 'centered-with-video'): ?>
+                    <li class="main-carousel-slide main-carousel-slide-video embla__slide cover-image">
+                        <img src="<?php the_sub_field('imagem_representativa_centered_style'); ?>" alt="<?php the_sub_field('titulo_principal_centered_style'); ?>">
+                        <div class="carousel-content cover-image">
+                            <h3 data-aos="fade-up"><?php the_sub_field('titulo_principal_centered_style'); ?></h3>
+                            <a class="modal-open" href="<?php the_sub_field('link_do_video_centered_style'); ?>">
+                                <img data-aos="fade-up" src="<?php echo THEME_IMAGES . '/icons/play-white.svg' ?>" alt="Ícone Play">
+                                <span data-aos="fade-up"><?php the_sub_field('legenda_do_video'); ?></span>
+                            </a>
+                        </div>
+                        <!-- /.carousel-content -->
+                    </li>
 
-            <li class="main-carousel-slide main-carousel-slide-default has-circle embla__slide">
-                <div class="carousel-content container medium">
-                    <div class="carousel-text">
-                        <p data-aos="fade-up">
-                            Tudo que  a gente faz é para o bem
-                            <span style="color: #8E68FF;">das pessoas</span>,
-                            <span style="color: #2273E1;">do negócio</span>
-                            <span style="color: #55AF7D">e do planeta</span>.
-                        </p data-aos="fade-up">
+				<?php elseif($slide_type === 'only-image'):  ?>
+                    <li class="main-carousel-slide main-carousel-only-image main-carousel-slide-default embla__slide cover-image">
+                        <img src="<?php the_sub_field('imagem_de_fundo_only_image'); ?>" alt="Imagem">
 
-                        <span data-aos="fade-up">O mundo foi feito para durar. </span>
+                        <div class="carousel-content container medium">
+                            <div class="carousel-text">
+                                <div data-aos="fade-up">
+									<?php the_sub_field('titulo_principal_left_aligned_style'); ?>
+                                </div>
 
-                        <a data-aos="fade-down" href="#0" class="button dark-blue solid">Conheça a nova marca</a>
-                    </div>
-                    <!-- /.carousel-text -->
+                                <span data-aos="fade-up">
+                                        <?php echo strip_tags(get_sub_field('subtitulo_left_aligned_style'), '<span>') ?>
+                                    </span>
 
-                    <div class="carousel-image circle-image">
-                        <img src="<?php echo THEME_IMAGES . '/brands/brand-icon.svg' ?>" alt="Ícone da Marca Malwee">
-                    </div>
-                    <!-- /.cover-image -->
+                                <a data-aos="fade-down" href="<?php the_sub_field('link_left_aligned_style_copiar'); ?>" class="button dark-blue solid">
+									<?php the_sub_field('texto_link_left_aligned_style'); ?>
+                                </a>
+                            </div>
+                            <!-- /.carousel-text -->
+                        </div>
+                        <!-- /.carousel-content -->
 
-                </div>
-                <!-- /.carousel-content -->
+                    </li>
+				<?php else: ?>
+                    <li class="main-carousel-slide main-carousel-slide-default has-circle embla__slide">
+                        <div class="carousel-content container medium">
+                            <div class="carousel-text">
+                                <div data-aos="fade-up">
+									<?php the_sub_field('titulo_principal_left_aligned_style'); ?>
+                                </div>
 
-                <div class="circle purple right"></div>
-            </li>
+                                <span data-aos="fade-up">
+                                        <?php echo strip_tags(get_sub_field('subtitulo_left_aligned_style'), '<span>') ?>
+                                </span>
+
+                                <a data-aos="fade-down" href="<?php the_sub_field('link_left_aligned_style_copiar'); ?>" class="button dark-blue solid">
+									<?php the_sub_field('texto_link_left_aligned_style'); ?>
+                                </a>
+                            </div>
+                            <!-- /.carousel-text -->
+
+                            <div class="carousel-image circle-image">
+                                <img src="<?php the_sub_field('imagem_representativa_left_aligned_style'); ?>" alt="<?php the_sub_field('subtitulo_left_aligned_style'); ?>">
+                            </div>
+                            <!-- /.cover-image -->
+
+                        </div>
+                        <!-- /.carousel-content -->
+
+                        <div class="circle purple right"></div>
+                    </li>
+				<?php endif; ?>
+			<?php endwhile; endif; ?>
         </ul>
         <!-- /.main-carousel -->
     </div>
@@ -67,7 +97,7 @@
 <section id="brands">
     <div class="container medium">
         <div data-aos="fade-up" class="brand-description">
-            Somos uma empresa de moda movida por relações duradouras com as pessoas, o negócio e o planeta. Enxergamos o mundo através do impacto positivo que geramos na vida das pessoas, na construção de parcerias prósperas e na moda democrática e com menor impacto ambiental.
+			<?php the_field('descricao_inicial_nossas_marcas') ?>
         </div>
         <!-- /.brand-description -->
         <h3 data-aos="fade-up">
@@ -75,63 +105,48 @@
         </h3>
 
         <ul class="malwee-brand-list">
-            <li data-aos="fade-up">
-                <img class="default-image" src="<?php echo THEME_IMAGES . '/brands/hover-brands/malwee.png' ?>" alt="Marca Malwee">
-                <img class="hover-image" src="<?php echo THEME_IMAGES . '/brands/hover-brands/malwee-hover.png' ?>" alt="Marca Malwee">
-            </li>
-
-            <li data-aos="fade-up" data-aos-delay="100">
-                <img class="default-image" src="<?php echo THEME_IMAGES . '/brands/hover-brands/enfim.png' ?>" alt="Marca Enfim">
-                <img class="hover-image" src="<?php echo THEME_IMAGES . '/brands/hover-brands/enfim-hover.png' ?>" alt="Marca Enfim">
-            </li>
-
-            <li data-aos="fade-up" data-aos-delay="200">
-                <img class="default-image" src="<?php echo THEME_IMAGES . '/brands/hover-brands/malwee-kids.png' ?>" alt="Marca Malwee Kids">
-                <img class="hover-image" src="<?php echo THEME_IMAGES . '/brands/hover-brands/malwee-kids-hover.png' ?>" alt="Marca Malwee Kids">
-            </li>
-
-            <li data-aos="fade-up" data-aos-delay="300">
-                <img class="default-image" src="<?php echo THEME_IMAGES . '/brands/hover-brands/carinhoso.png' ?>" alt="Marca Carinhoso">
-                <img class="hover-image" src="<?php echo THEME_IMAGES . '/brands/hover-brands/carinhoso-hover.png' ?>" alt="Marca Carinhoso">
-            </li>
-
-            <li data-aos="fade-up" data-aos-delay="400">
-                <img class="default-image" src="<?php echo THEME_IMAGES . '/brands/hover-brands/zig-zig-zaa.png' ?>" alt="Marca Zig Zig Zaa">
-                <img class="hover-image" src="<?php echo THEME_IMAGES . '/brands/hover-brands/zig-zig-zaa-hover.png' ?>" alt="Marca Zig Zig Zaa">
-            </li>
+			<?php if(have_rows('lista_de_logos_nossas_marcas')): while(have_rows('lista_de_logos_nossas_marcas')): the_row(); ?>
+                <li data-aos="fade-up">
+                    <img class="default-image" src="<?php the_sub_field('logo_marca');?>" alt="<?php the_sub_field('nome_da_marca');?>">
+                    <img class="hover-image" src="<?php the_sub_field('imagem_hover');?>" alt="<?php the_sub_field('nome_da_marca');?>">
+                </li>
+			<?php endwhile; endif; ?>
         </ul>
         <!-- /.malwee-brand-list -->
 
-        <h3 data-aos="fade-bottom">Somos movidos por relações duradouras</h3>
+        <h3 data-aos="fade-bottom"><?php the_field('subtitulo_marcas'); ?></h3>
 
         <ul class="business-people-planet">
-            <li data-aos="fade-up">
-                <strong class="text text-business">negócios</strong>
-                <img src="<?php echo THEME_IMAGES . '/business.jpg' ?>" alt="Negócios">
+			<?php if(have_rows('lista_de_pilares')): while(have_rows('lista_de_pilares')): the_row(); ?>
+				<?php
+				$color_legend = array(
+					'business' => 'blue',
+					'people' => 'purple',
+					'planet' => 'green'
+				);
+				$bg_color = $color_legend[get_sub_field('representa_o_pilar')];
+				?>
+                <li data-aos="fade-up">
+                    <strong class="text text-<?php the_sub_field('representa_o_pilar'); ?>">
+						<?php echo strtolower(get_sub_field('titulo_pilar')); ?>
+                    </strong>
 
-                <p class="text text-business">Gerar impacto positivo, <br> além do financeiro.</p>
+                    <div class="image image-<?php the_sub_field('representa_o_pilar'); ?>">
+                        <img src="<?php the_sub_field('imagem_representativa'); ?>" alt="Negócios">
+                        <span class="bg-<?php echo $bg_color; ?>"><?php echo strtolower(get_sub_field('titulo_pilar')); ?></span>
+                    </div>
+                    <!-- /.image -->
 
-                <a href="#0">Seja nosso parceiro</a>
-            </li>
+                    <p class="text text-<?php the_sub_field('representa_o_pilar'); ?>">
+						<?php the_sub_field('subtitulo_pilar'); ?>
+                    </p>
 
-            <li data-aos="fade-up" data-aos-delay="200">
-                <strong class="text text-people">pessoas</strong>
-                <img src="<?php echo THEME_IMAGES . '/people.jpg' ?>" alt="Pessoas">
+                    <a href="<?php the_sub_field('link'); ?>">
+						<?php the_sub_field('texto_link'); ?>
+                    </a>
+                </li>
 
-                <p class="text text-people">Valores que constróem <br> Relações duradouras.</p>
-
-                <a href="#0">Trabalhe conosco</a>
-            </li>
-
-            <li data-aos="fade-up" data-aos-delay="400">
-                <strong class="text text-planet">planeta</strong>
-                <img src="<?php echo THEME_IMAGES . '/planet.jpg' ?>" alt="Planeta">
-
-                <p class="text text-planet">Nosso compromisso <br> com o planeta. </p>
-
-                <a href="#0">Saiba mais</a>
-            </li>
-
+			<?php endwhile; endif; ?>
         </ul>
         <!-- /.business-people-planet -->
 
@@ -145,117 +160,22 @@
 <section id="company-numbers">
     <div class="container medium">
         <div class="company-numbers-content">
-            <ul class="company-numbers-wrap business-numbers">
-                <li>
-                    <div class="number-content text text-business">
-                        <strong class="purecounter" data-purecounter-start="0" data-purecounter-end="10">00</strong>
-                        <span class="number-symbol">%</span>
-                    </div>
-                    <!-- /.number-content -->
-                    <span class="number-legend">dos municípios <br> brasileiros</span>
-                </li>
 
-                <li>
-                    <div class="number-content text text-business">
-                        <strong class="purecounter" data-purecounter-start="0" data-purecounter-end="95">00</strong>
-                        <span class="number-symbol">mil</span>
-                    </div>
-                    <!-- /.number-content -->
-                    <span class="number-legend">clientes</span>
-                </li>
-
-                <li>
-                    <div class="number-content text text-business">
-                        <strong class="purecounter" data-purecounter-start="0" data-purecounter-end="10">00</strong>
-                        <span class="number-symbol">milhões</span>
-                    </div>
-                    <!-- /.number-content -->
-                    <span class="number-legend">Peças produzidas por ano</span>
-                </li>
-
-                <li>
-                    <div class="number-content text text-business">
-                        <strong class="purecounter" data-purecounter-start="0" data-purecounter-end="10">150</strong>
-                    </div>
-                    <!-- /.number-content -->
-                    <span class="number-legend">Lojas fidelizadas</span>
-                </li>
-            </ul>
-
-            <ul class="company-numbers-wrap people-numbers">
-                <li>
-                    <div class="number-content text text-people">
-                        <strong class="purecounter" data-purecounter-start="0" data-purecounter-end="10">00</strong>
-                    </div>
-                    <!-- /.number-content -->
-                    <span class="number-legend">anos de história</span>
-                </li>
-
-                <li>
-                    <div class="number-content text text-people">
-                        <strong class="purecounter" data-purecounter-start="0" data-purecounter-end="42">00</strong>
-                        <span class="number-symbol">%</span>
-                    </div>
-                    <!-- /.number-content -->
-                    <span class="number-legend">mulheres em cargos <br> de liderança</span>
-                </li>
-
-                <li>
-                    <div class="number-content text text-people">
-                        <strong class="purecounter" data-purecounter-start="0" data-purecounter-end="2">00</strong>
-                        <span class="number-symbol">mil</span>
-                    </div>
-                    <!-- /.number-content -->
-                    <span class="number-legend">colaboradores</span>
-                </li>
-
-                <li>
-                    <div class="number-content text text-people">
-                        <strong class="purecounter" data-purecounter-start="0" data-purecounter-end="15">00</strong>
-                        <span class="number-symbol">%</span>
-                    </div>
-                    <!-- /.number-content -->
-                    <span class="number-legend">dos colaboradores com <br> mais de 10 anos de casa </span>
-                </li>
-            </ul>
-
-            <ul class="company-numbers-wrap planet-numbers">
-                <li>
-                    <div class="number-content text text-planet">
-                        <strong class="purecounter" data-purecounter-start="0" data-purecounter-end="67">00</strong>
-                        <span class="number-symbol">milhões</span>
-                    </div>
-                    <!-- /.number-content -->
-                    <span class="number-legend">m2 de preservação <br> ambiental </span>
-                </li>
-
-                <li>
-                    <div class="number-content text text-planet">
-                        <strong class="purecounter" data-purecounter-start="0" data-purecounter-end="42">00</strong>
-                        <span class="number-symbol">%</span>
-                    </div>
-                    <!-- /.number-content -->
-                    <span class="number-legend">menos consumo <br> de água </span>
-                </li>
-
-                <li>
-                    <div class="number-content text text-planet">
-                        <strong class="purecounter" data-purecounter-start="0" data-purecounter-end="89">00</strong>
-                        <span class="number-symbol">%</span>
-                    </div>
-                    <!-- /.number-content -->
-                    <span class="number-legend">menos emisssão de <br> gases de efeito estufa </span>
-                </li>
-
-                <li>
-                    <div class="number-content text text-planet">
-                        <strong class="purecounter" data-purecounter-start="0" data-purecounter-end="51">00</strong>
-                        <span class="number-symbol">%</span>
-                    </div>
-                    <!-- /.number-content -->
-                    <span class="number-legend">uso de energia <br> renovável</span>
-                </li>
-            </ul>
+			<?php if(have_rows('colunas_de_numeros')): while(have_rows('colunas_de_numeros')): the_row(); ?>
+				<?php $pilar = get_sub_field('representa_o_pilar')  ?>
+                <ul class="company-numbers-wrap <?php echo $pilar; ?>-numbers">
+					<?php if(have_rows('lista_de_numeros')): while(have_rows('lista_de_numeros')): the_row(); ?>
+                        <li>
+                            <div class="number-content text text-<?php echo $pilar; ?>">
+                                <strong class="purecounter" data-purecounter-start="0" data-purecounter-end="<?php  the_sub_field('numero');?>">00</strong>
+                                <span class="number-symbol"><?php the_sub_field('unidade');?></span>
+                            </div>
+                            <!-- /.number-content -->
+                            <span class="number-legend"><?php the_sub_field('descricao');?></span>
+                        </li>
+					<?php endwhile; endif; ?>
+                </ul>
+			<?php endwhile; endif; ?>
         </div>
         <!-- /.company-numbers-content -->
     </div>
@@ -265,37 +185,39 @@
 
 <section id="home-middle">
     <div class="esg-plan-2030">
-        <div class="parallax" data-parallax-image="<?php echo THEME_IMAGES . '/parallax/people.jpg' ?>"></div>
+        <div class="parallax" data-parallax-image="<?php the_field('imagem_de_fundo_parallax_1') ?>"></div>
         <div class="container medium">
             <p>
-                O mundo precisa de
-                pessoas que, juntas,
-                façam o futuro hoje.
+				<?php the_field('titulo_parallax_1') ?>
             </p>
-            <a href="#0">Conheça o nosso plano ESG 2030.</a>
+            <a href="<?php the_field('link_parallax_1'); ?>">
+				<?php the_field('texto_link_parallax_1'); ?>
+            </a>
         </div>
         <!-- /.container medium -->
 
-        <?php if(!wp_is_mobile()): ?>
+		<?php if(!wp_is_mobile()): ?>
             <svg class="bg-circle" xmlns="http://www.w3.org/2000/svg" width="648" height="648" viewBox="0 0 648 648">
                 <circle id="Elipse_25" data-name="Elipse 25" cx="324" cy="324" r="324" fill="#0d1136"/>
             </svg>
-        <?php endif; ?>
+		<?php endif; ?>
 
 
         <div class="esg-plan-2030-logo">
-            <img src="<?php echo THEME_IMAGES . '/logo-esg-plan-2030.png' ?>" alt="Plano ESG 2030">
+            <img src="<?php the_field('imagem_representativa_parallax_1'); ?>" alt="Plano ESG 2030">
         </div>
     </div>
     <!-- /.esg-plan-2030 -->
 
     <section class="transform-your-business">
-        <div class="parallax" data-parallax-image="<?php echo THEME_IMAGES . '/parallax/transform-your-business.jpg' ?>"></div>
+        <div class="parallax" data-parallax-image="<?php the_field('imagem_de_fundo_parallax_2') ?>"></div>
         <div class="container medium">
             <div class="content">
-                <strong>Transforme seu negócio</strong>
-                <p>Criamos um modelo de loja única e especial, um espaço que privilegia relações, as pessoas e a comunidade local.</p>
-                <a href="#0" class="button white outlined">Conheça o projeto</a>
+                <strong><?php the_field('titulo_parallax_2') ?></strong>
+                <p>
+					<?php the_field('descricao_parallax_2'); ?>
+                </p>
+                <a href="<?php the_field('link_parallax_2'); ?>" class="button white outlined"><?php the_field('texto_link_parallax_2'); ?></a>
             </div>
             <!-- /.content -->
         </div>
@@ -309,17 +231,18 @@
     <div class="container medium">
         <div class="content">
             <div class="description">
-                <img data-aos="fade-up" src="<?php echo THEME_IMAGES . '/brands/instituto-malwee.png' ?>" alt="Logo Instituto Malwee">
-                <p data-aos="fade-up">
-                    Construímos hoje, o amanhã. <br>
-                    Com foco na infância e meio ambiente, investimos no futuro.
-                </p>
-                <a data-aos="fade-up" href="#0" class="button dark-blue outlined">Conheça o projeto</a>
+                <img data-aos="fade-up" src="<?php the_field('logo_instituto_malwee'); ?>" alt="Logo Instituto Malwee">
+                <div data-aos="fade-up">
+					<?php the_field('descricao_instituto_malwee'); ?>
+                </div>
+                <a data-aos="fade-up" href="<?php the_field('link_instituto_malwee_copiar'); ?>" class="button dark-blue outlined">
+					<?php the_field('texto_link_instituto_malwee'); ?>
+                </a>
             </div>
             <!-- /.description -->
 
             <div class="cover-image" data-aos="fade-left">
-                <img src="<?php echo THEME_IMAGES . '/instituto-malwee.jpg' ?>" alt="Foto Instituto Malwee">
+                <img src="<?php the_field('imagem_representativa_instituto_malwee'); ?>" alt="Foto Instituto Malwee">
             </div>
             <!-- /.cover-image -->
         </div>

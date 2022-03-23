@@ -57,6 +57,9 @@
   }
 
   &.purple {
+    &.solid {
+      background-color: $people-color;
+    }
     &.outlined {
       border: 2px solid $people-color;
       color: $people-color;
@@ -68,6 +71,10 @@
   }
 
   &.green {
+    &.solid {
+      background-color: $planet-color;
+      color: #fff;
+    }
     &.outlined {
       border: 2px solid $planet-color;
       color: $planet-color;

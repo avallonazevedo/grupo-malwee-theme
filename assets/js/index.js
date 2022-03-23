@@ -10,9 +10,11 @@ import {
   createOurValuesCarousel,
   createTimelineCarousel,
   createWhereDoWeProduceCarousel,
-  createPrizesCarousel
+  createPrizesCarousel,
+    createPeopleCarousel
 } from "./carousels/carousels";
 import { isHome } from "./constants/constants";
+import {createMobileMenu} from "./animations/mobile-menu";
 
 // eslint-disable-next-line require-jsdoc
 const runApplication = () => {
@@ -23,7 +25,9 @@ const runApplication = () => {
   createOurValuesCarousel();
   createTimelineCarousel();
   createWhereDoWeProduceCarousel();
-  createPrizesCarousel()
+  createPrizesCarousel();
+  createPeopleCarousel();
+  createMobileMenu();
 };
 
 document.addEventListener('DOMContentLoaded', runApplication);

@@ -11,6 +11,15 @@
     left: 0;
   }
 
+  .brand-logo {
+    position: relative;
+    z-index: 2;
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: block;
+  }
+
   h1 {
     padding: 0 1em;
     text-align: center;
@@ -70,9 +79,8 @@
 
 .manifest-video {
   width: 85%;
-  margin: 1.5em auto 0;
+  margin: 0 auto;
   max-width: 54em;
-  height: 25em;
   position: relative;
   img {
     border-radius: 2px;
